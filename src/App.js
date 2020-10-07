@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
+import AdminLTE, { Content, Row, Col, Box } from 'adminlte-2-react'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      Hi
-    </div>
+    <AdminLTE title={'hi'}>
+      <Content>
+        <Row>
+          <Col>
+            <Box>
+              App Example
+            </Box>
+          </Col>
+        </Row>
+      </Content>
+    </AdminLTE>
   );
 }
-
-export default App;
