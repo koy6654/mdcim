@@ -19,48 +19,48 @@ export default function SidebarCore() {
                 <Item icon='fas-angle-right' text='Default Preferences' to='/defaultpreferences' />
             </Item>
             <Item icon='fas-tablet-alt' text='Device Settings'>
-                <Item icon='fas-angle-right' text='Network' to='/' />
+                <Item icon='fas-angle-right' text='Network' to='/devicesettings/network' />
                 <Item icon='fas-plus' text='Network Services'>
-                    <Item icon='fas-angle-right' text='HTTP' to='/' />
-                    <Item icon='fas-angle-right' text='SNMP' to='/' />
-                    <Item icon='fas-angle-right' text='SMTP Server' to='/' />
-                    <Item icon='fas-angle-right' text='SSH' to='/' />
-                    <Item icon='fas-angle-right' text='Telnet' to='/' />
-                    <Item icon='fas-angle-right' text='Modbus' to='/' />
-                    <Item icon='fas-angle-right' text='Service Advertising' to='/' />
+                    <Item icon='fas-angle-right' text='HTTP' to='/devicesettings/networkservices/http' />
+                    <Item icon='fas-angle-right' text='SNMP' to='/devicesettings/networkservices/snmp' />
+                    <Item icon='fas-angle-right' text='SMTP Server' to='/devicesettings/networkservices/smtp' />
+                    <Item icon='fas-angle-right' text='SSH' to='/devicesettings/networkservices/ssh' />
+                    <Item icon='fas-angle-right' text='Telnet' to='/devicesettings/networkservices/telnet' />
+                    <Item icon='fas-angle-right' text='Modbus' to='/devicesettings/networkservices/modbus' />
+                    <Item icon='fas-angle-right' text='Service Advertising' to='/devicesettings/networkservices/serviceadvertising' />
                 </Item>
                 <Item icon='fas-plus' text='Security'>
-                    <Item icon='fas-angle-right' text='IP Access Control' to='/' />
-                    <Item icon='fas-angle-right' text='Role Based Access Control' to='/' />
-                    <Item icon='fas-angle-right' text='TLS Certificate' to='/' />
-                    <Item icon='fas-angle-right' text='Authentication' to='/' />
-                    <Item icon='fas-angle-right' text='Login Settings' to='/' />
-                    <Item icon='fas-angle-right' text='Password Policy' to='/' />
-                    <Item icon='fas-angle-right' text='Service Agreement' to='/' />
+                    <Item icon='fas-angle-right' text='IP Access Control' to='/devicesettings/security/ipaccesscontrol' />
+                    <Item icon='fas-angle-right' text='Role Based Access Control' to='/devicesettings/security/rolebasedaccesscontrol' />
+                    <Item icon='fas-angle-right' text='TLS Certificate' to='/devicesettings/security/tlscertificate' />
+                    <Item icon='fas-angle-right' text='Authentication' to='/devicesettings/security/authentication' />
+                    <Item icon='fas-angle-right' text='Login Settings' to='/devicesettings/security/loginsettings' />
+                    <Item icon='fas-angle-right' text='Password Policy' to='/devicesettings/security/passwordpolicy' />
+                    <Item icon='fas-angle-right' text='Service Agreement' to='/devicesettings/security/serviceagreement' />
                 </Item>
-                <Item icon='fas-angle-right' text='Date / Time' to='/' />
-                <Item icon='fas-angle-right' text='Event Rules' to='/' />
-                <Item icon='fas-angle-right' text='Data Logging' to='/' />
-                <Item icon='fas-angle-right' text='Data Push' to='/' />
-                <Item icon='fas-angle-right' text='Server Reachability' to='/' />
-                <Item icon='fas-angle-right' text='Front Panel' to='/' />
-                <Item icon='fas-angle-right' text='Serial Port' to='/' />
-                <Item icon='fas-angle-right' text='Lua Scripts' to='/' />
-                <Item icon='fas-angle-right' text='Miscellaneous' to='/' />
+                <Item icon='fas-angle-right' text='Date / Time' to='/devicesettings/datetime' />
+                <Item icon='fas-angle-right' text='Event Rules' to='/devicesettings/eventrules' />
+                <Item icon='fas-angle-right' text='Data Logging' to='/devicesettings/datalogging' />
+                <Item icon='fas-angle-right' text='Data Push' to='/devicesettings/datapush' />
+                <Item icon='fas-angle-right' text='Server Reachability' to='/devicesettings/serverreachability' />
+                <Item icon='fas-angle-right' text='Front Panel' to='/devicesettings/frontpanel' />
+                <Item icon='fas-angle-right' text='Serial Port' to='/devicesettings/serialport' />
+                <Item icon='fas-angle-right' text='Lua Scripts' to='/devicesettings/luascripts' />
+                <Item icon='fas-angle-right' text='Miscellaneous' to='/devicesettings/miscellaneous' />
             </Item>
             <Item icon='fas-wrench' text='Maintenance'>
-                <Item icon='fas-angle-right' text='Device Information' to='/' />
-                <Item icon='fas-angle-right' text='Connected Users' to='/' />
-                <Item icon='fas-angle-right' text='Event Log' to='/' />
-                <Item icon='fas-angle-right' text='Update Firmware' to='/' />
-                <Item icon='fas-angle-right' text='Firmware History' to='/' />
-                <Item icon='fas-angle-right' text='Bulk Configuration' to='/' />
-                <Item icon='fas-angle-right' text='Backup / Restore' to='/' />
-                <Item icon='fas-angle-right' text='Network Diagnostics' to='/' />
-                <Item icon='fas-angle-right' text='Download Diagnostic' to='/' />
-                <Item icon='fas-angle-right' text='Hardware Failures' to='/' />
-                <Item icon='fas-angle-right' text='Unit Reset' to='/' />
-                <Item icon='fas-angle-right' text='About SRC' to='/' />
+                <Item icon='fas-angle-right' text='Device Information' to='/maintenance/deviceinformation' />
+                <Item icon='fas-angle-right' text='Connected Users' to='/maintenance/connectedusers' />
+                <Item icon='fas-angle-right' text='Event Log' to='/maintenance/eventlog' />
+                <Item icon='fas-angle-right' text='Update Firmware' to='/maintenance/updatefirmware' />
+                <Item icon='fas-angle-right' text='Firmware History' to='/maintenance/firmwarehistory' />
+                <Item icon='fas-angle-right' text='Bulk Configuration' to='/maintenance/bulkconfiguration' />
+                <Item icon='fas-angle-right' text='Backup / Restore' to='/maintenance/backuprestore' />
+                <Item icon='fas-angle-right' text='Network Diagnostics' to='/maintenance/networkdiagnostics' />
+                <Item icon='fas-angle-right' text='Download Diagnostic' to='/maintenance/downloaddiagnostics' />
+                <Item icon='fas-angle-right' text='Hardware Failures' to='/maintenance/hardwarefailures' />
+                <Item icon='fas-angle-right' text='Unit Reset' to='/maintenance/unitreset' />
+                <Item icon='fas-angle-right' text='About SRC' to='/maintenance/aboutsrc' />
             </Item>
         </>
     );

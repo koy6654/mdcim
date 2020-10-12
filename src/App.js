@@ -1,23 +1,4 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-import AdminLTE, { Content, Row, Col, Box } from 'adminlte-2-react'
-
-export default function App() {
-  return (
-    <AdminLTE title={'hi'}>
-      <Content>
-        <Row>
-          <Col>
-            <Box>
-              App Example
-            </Box>
-          </Col>
-        </Row>
-      </Content>
-    </AdminLTE>
-
-  );
-=======
 import AdminLTE, { Content, Navbar, Sidebar } from 'adminlte-2-react'
 
 import NavbarCore from './components/NavbarCore';
@@ -36,6 +17,11 @@ import Roles from './screens/UserManagement/Roles';
 import ChangePassword from './screens/UserManagement/ChangePassword';
 import UserPreferences from './screens/UserManagement/UserPreferences';
 import DefaultPreferences from './screens/UserManagement/DefaultPreferences';
+
+import Network from './screens/DeviceSettings/Network/Network';
+import NetworkServices from './screens/DeviceSettings/NetworkServices/NetworkServices';
+
+
 
 export default class App extends Component {
   render() {
@@ -57,17 +43,21 @@ export default class App extends Component {
         <FeaturePort path='/featureport' />
         <SmartLock path='/smartlock' />
 
-        {/* UserManagement */}
+        {/* User Management */}
         <Users path='/users' />
         <Roles path='/roles' />
         <ChangePassword path='/changepassword' />
         <UserPreferences path='/userpreferences' />
         <DefaultPreferences path='/defaultpreferences' />
+
+        {/* Device Settings */}
+        <Network path='/devicesettings/network' />
+        <NetworkServices path='/devicesettings/networkservices' />
+
         <Content>
 
         </Content>
-      </AdminLTE>
+      </AdminLTE >
     );
   }
->>>>>>> origin/develop
 }

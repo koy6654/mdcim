@@ -42,7 +42,7 @@ export default class Dashboard extends Component {
                             <div>
                                 <div style={{ paddingLeft: '10px', fontSize: '18px' }}>
                                     Name
-                                    <input style={{ marginLeft: '484px', width: '1084px' }}></input>
+                                    <input style={{ marginLeft: '484px', width: '1084px', borderRadius: '5px', borderWidth: '1px' }}></input>
                                 </div>
                                 <br />
                                 <div style={{ textAlign: 'right' }}>
