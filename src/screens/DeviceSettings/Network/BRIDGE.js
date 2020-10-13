@@ -18,7 +18,7 @@ export default class BRIDGE extends Component {
                 <div style={{
                     paddingLeft: '10px',
                     paddingRight: '10px',
-                    fontSize: '22px',
+                    fontSize: '25px',
                     paddingBottom: '10px',
                     paddingTop: '25px',
                     borderBottom: '2px solid #E0D7D7',
@@ -35,7 +35,7 @@ export default class BRIDGE extends Component {
                 <div style={{
                     paddingLeft: '10px',
                     paddingRight: '10px',
-                    fontSize: '22px',
+                    fontSize: '25px',
                     paddingBottom: '10px',
                     paddingTop: '25px',
                     borderBottom: '2px solid #E0D7D7'

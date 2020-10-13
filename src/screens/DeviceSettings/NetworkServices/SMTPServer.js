@@ -5,7 +5,7 @@ import Input from '../../../components/Input';
 import Checkbox from '../../../components/Checkbox';
 import Upload from '../../../components/Upload';
 
-export default class SNMP extends Component {
+export default class SMTPServer extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -40,7 +40,6 @@ export default class SNMP extends Component {
                                     paddingTop: '25px',
                                     display: 'inline-block',
                                     width: '30%',
-                                    display: 'inline-block',
                                 }}>CA certification</div>
                                 <div style={{ display: 'inline-block', fontSize: '15px', width: '54%' }}>not set</div>
                                 <div style={{ display: 'inline-block' }}>
@@ -57,15 +56,17 @@ export default class SNMP extends Component {
                                     width: '30%',
                                 }}>
                                 </div>
-                                <div style={{ display: 'inline-block', margin: 'auto', width: '68%', verticalAlign: 'middle' }}>
-                                    <input
-                                        type='checkbox'
-                                        name={this.props.name}
-                                        style={{ width: '23px', height: '23px' }}
-                                    />
-                                    <span style={{ display: 'inline-table', paddingLeft: '50px', fontSize: '16px', color: 'gray' }}>
-                                        Allow expired and not yet valid certificates
-                                    </span>
+                                <div style={{ display: 'inline-block', width: '68%' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                        <input
+                                            type='checkbox'
+                                            name=''
+                                            style={{ width: '23px', height: '23px' }}
+                                        />
+                                        <span style={{ paddingLeft: '50px', fontSize: '16px', color: 'gray' }}>
+                                            Allow expired and not yet valid certificates
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                             <br /><br />

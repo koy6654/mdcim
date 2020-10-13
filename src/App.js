@@ -24,8 +24,10 @@ import NetworkServices from './screens/DeviceSettings/NetworkServices/NetworkSer
 import HTTP from './screens/DeviceSettings/NetworkServices/HTTP';
 import SNMP from './screens/DeviceSettings/NetworkServices/SNMP';
 import SMTPServer from './screens/DeviceSettings/NetworkServices/SMTPServer';
-
-
+import SSH from './screens/DeviceSettings/NetworkServices/SSH';
+import Telnet from './screens/DeviceSettings/NetworkServices/Telnet';
+import Modbus from './screens/DeviceSettings/NetworkServices/Modbus';
+import ServiceAdvertising from './screens/DeviceSettings/NetworkServices/ServiceAdvertising';
 
 export default class App extends Component {
   render() {
@@ -60,6 +62,12 @@ export default class App extends Component {
         <HTTP path='/devicesettings/networkservices/http' exact />
         <SNMP path='/devicesettings/networkservices/snmp' exact />
         <SMTPServer path='/devicesettings/networkservices/smtpserver' exact />
+        <SSH path='/devicesettings/networkservices/ssh' exact />
+        <Telnet path='/devicesettings/networkservices/telnet' exact />
+        <Modbus path='/devicesettings/networkservices/modbus' exact />
+        <ServiceAdvertising path='/devicesettings/networkservices/serviceadvertising' exact />
+
+
 
         <Content>
 

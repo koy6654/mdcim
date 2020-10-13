@@ -22,7 +22,7 @@ export default class HTTP extends Component {
                 <Row>
                     <Col xs={12}>
                         <Box title='HTTP' border type='default' collapsable collapsed solid>
-                            <Input label='Enable HTTP access' />
+                            <Checkbox label='Enable HTTP access' />
                             <Checkbox label='Enforce use of HTTPS' />
                             <Input label='Port' />
                             <br />
