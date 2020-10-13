@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AdminLTE, { Content, Navbar, Sidebar } from 'adminlte-2-react'
 
+
 import NavbarCore from './components/NavbarCore';
 import SidebarCore from './components/SidebarCore';
 
@@ -20,8 +21,8 @@ import DefaultPreferences from './screens/UserManagement/DefaultPreferences';
 
 import Network from './screens/DeviceSettings/Network/Network';
 import NetworkServices from './screens/DeviceSettings/NetworkServices/NetworkServices';
-
-
+import HTTP from './screens/DeviceSettings/NetworkServices/HTTP';
+import SNMP from './screens/DeviceSettings/NetworkServices/SNMP';
 
 export default class App extends Component {
   render() {
@@ -34,26 +35,27 @@ export default class App extends Component {
           <SidebarCore />
         </Sidebar.Core>
 
-        <Login path='/login' />
-        <Register path='/register' />
+        <Login path='/login' exact />
+        <Register path='/register' exact />
 
-        <Dashboard path='/dashboard' />
-        <SRC path='/src' />
-        <Peripherals path='/peripherals' />
-        <FeaturePort path='/featureport' />
-        <SmartLock path='/smartlock' />
+        <Dashboard path='/dashboard' exact />
+        <SRC path='/src' exact />
+        <Peripherals path='/peripherals' exact />
+        <FeaturePort path='/featureport' exact />
+        <SmartLock path='/smartlock' exact />
 
         {/* User Management */}
-        <Users path='/users' />
-        <Roles path='/roles' />
-        <ChangePassword path='/changepassword' />
-        <UserPreferences path='/userpreferences' />
-        <DefaultPreferences path='/defaultpreferences' />
+        <Users path='/users' exact />
+        <Roles path='/roles' exact />
+        <ChangePassword path='/changepassword' exact />
+        <UserPreferences path='/userpreferences' exact />
+        <DefaultPreferences path='/defaultpreferences' exact />
 
         {/* Device Settings */}
-        <Network path='/devicesettings/network' />
-        <NetworkServices path='/devicesettings/networkservices' />
-
+        <Network path='/devicesettings/network' exact />
+        {/* <NetworkServices path='/devicesettings/' /> */}
+        <HTTP path='/devicesettings/networkservices/http' />
+        <SNMP path='/devicesettings/networkservices/snmp' />
         <Content>
 
         </Content>

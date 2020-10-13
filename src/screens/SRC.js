@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { Content, Row, Col, Box } from 'adminlte-2-react';
 
+import Input from '../components/Input';
+
 export default class Dashboard extends Component {
-
-
     render() {
-        const pStyle = { borderBottom: '1px solid', paddingBottom: '14px' }
         return (
             <Content title='SRC'>
                 <Row>
@@ -40,18 +39,13 @@ export default class Dashboard extends Component {
                     <Col xs={12}>
                         <Box title='Settings' border='true' type='default' solid>
                             <div>
-                                <div style={{ paddingLeft: '10px', fontSize: '18px' }}>
-                                    Name
-                                    <input style={{ marginLeft: '484px', width: '1084px', borderRadius: '5px', borderWidth: '1px' }}></input>
-                                </div>
+                                <Input label='Name' />
                                 <br />
                                 <div style={{ textAlign: 'right' }}>
                                     <button>Cancel</button>&nbsp;&nbsp;
                                     <button>Save</button>
                                 </div>
-
                             </div>
-
                         </Box>
                     </Col>
                 </Row>

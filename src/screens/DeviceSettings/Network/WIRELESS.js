@@ -13,7 +13,7 @@ export default class WIRELESS extends Component {
     }
     render() {
         return (
-            <Box title='WIRELESS' border type='default' collapsable solid>
+            <Box title='WIRELESS' border type='default' collapsable collapsed solid>
                 <div>
                     <div style={{ textAlign: 'right', borderBottom: '2px solid #E0D7D7' }}>
                         <a href=''>Show WLAN Diagnostics Log</a>
