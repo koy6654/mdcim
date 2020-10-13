@@ -23,7 +23,7 @@ export default function SidebarCore() {
                 <Item icon='fas-plus' text='Network Services'>
                     <Item icon='fas-angle-right' text='HTTP' to='/devicesettings/networkservices/http' />
                     <Item icon='fas-angle-right' text='SNMP' to='/devicesettings/networkservices/snmp' />
-                    <Item icon='fas-angle-right' text='SMTP Server' to='/devicesettings/networkservices/smtp' />
+                    <Item icon='fas-angle-right' text='SMTP Server' to='/devicesettings/networkservices/smtpserver' />
                     <Item icon='fas-angle-right' text='SSH' to='/devicesettings/networkservices/ssh' />
                     <Item icon='fas-angle-right' text='Telnet' to='/devicesettings/networkservices/telnet' />
                     <Item icon='fas-angle-right' text='Modbus' to='/devicesettings/networkservices/modbus' />

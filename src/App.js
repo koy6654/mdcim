@@ -23,6 +23,9 @@ import Network from './screens/DeviceSettings/Network/Network';
 import NetworkServices from './screens/DeviceSettings/NetworkServices/NetworkServices';
 import HTTP from './screens/DeviceSettings/NetworkServices/HTTP';
 import SNMP from './screens/DeviceSettings/NetworkServices/SNMP';
+import SMTPServer from './screens/DeviceSettings/NetworkServices/SMTPServer';
+
+
 
 export default class App extends Component {
   render() {
@@ -54,8 +57,10 @@ export default class App extends Component {
         {/* Device Settings */}
         <Network path='/devicesettings/network' exact />
         {/* <NetworkServices path='/devicesettings/' /> */}
-        <HTTP path='/devicesettings/networkservices/http' />
-        <SNMP path='/devicesettings/networkservices/snmp' />
+        <HTTP path='/devicesettings/networkservices/http' exact />
+        <SNMP path='/devicesettings/networkservices/snmp' exact />
+        <SMTPServer path='/devicesettings/networkservices/smtpserver' exact />
+
         <Content>
 
         </Content>

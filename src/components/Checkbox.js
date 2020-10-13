@@ -28,7 +28,7 @@ export default class Checkbox extends Component {
                 <div style={{ display: 'inline-block', margin: 'auto', verticalAlign: 'middle', width: '68%' }}>
                     <input
                         type='checkbox'
-                        name=''
+                        name={this.props.name}
                         style={{ width: '23px', height: '23px' }}
                     />
                 </div>

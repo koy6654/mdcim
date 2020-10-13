@@ -3,7 +3,7 @@ import { Content, Row, Col, Box } from 'adminlte-2-react';
 
 import Input from '../../../components/Input';
 import Checkbox from '../../../components/Checkbox';
-import Select from '../../../components/Select';
+import Upload from '../../../components/Upload';
 
 export default class SNMP extends Component {
     constructor(props) {
@@ -22,17 +22,51 @@ export default class SNMP extends Component {
                 <Row>
                     <Col xs={12}>
                         <Box title='Server Settings' border type='default' solid>
-                            <Input label='Read community string' placeholder='riei' />
-                            <Input label='Write community string' />
-                            <Input label='Read community string' placeholder='riei' />
-                            <Input label='Write community string' />
-                            <Input label='Write community string' />
-                            <Checkbox label='Enable SNMP v3' />
-                            <Input label='Write community string' />
-                            <Input label='Write community string' />
-                            <Checkbox label='Enable SNMP v3' />
-                            <button />
-                            <Checkbox label='Enable SNMP v1 / v2c' />
+                            <Input label='IP address / hostname' />
+                            <Input label='Port' />
+                            <Input label='Sender email address' />
+                            <Input label='Number of sending retries' />
+                            <Input label='Time between sending retries' />
+                            <Checkbox label='Server requires authentication' />
+                            <Input label='User name' />
+                            <Input label='Password' />
+                            <Checkbox label='Enable SNMP over TLS (StartTLS)' />
+                            <div>
+                                <div style={{
+                                    paddingLeft: '10px',
+                                    paddingRight: '10px',
+                                    fontSize: '20px',
+                                    paddingBottom: '15px',
+                                    paddingTop: '25px',
+                                    display: 'inline-block',
+                                    width: '30%',
+                                    display: 'inline-block',
+                                }}>CA certification</div>
+                                <div style={{ display: 'inline-block', fontSize: '15px', width: '54%' }}>not set</div>
+                                <div style={{ display: 'inline-block' }}>
+                                    <button style={{ width: '70px', height: '35px' }} value='Show'>Show</button>&nbsp;&nbsp;&nbsp;
+                                    <button style={{ width: '70px', height: '35px' }} value='Show'>Remove</button>
+                                </div>
+                            </div>
+                            <Upload />
+                            <div>
+                                <div style={{
+                                    paddingBottom: '15px',
+                                    paddingTop: '35px',
+                                    display: 'inline-block',
+                                    width: '30%',
+                                }}>
+                                </div>
+                                <div style={{ display: 'inline-block', margin: 'auto', width: '68%' }}>
+                                    <input
+                                        type='checkbox'
+                                        name={this.props.name}
+                                        style={{ width: '23px', height: '23px' }}
+                                    />
+                                    <span style={{ display: 'table-cell', verticalAlign: 'middle', fontSize: '16px' }}>Allow</span>
+                                </div>
+                            </div>
+                            <br /><br />
                         </Box>
 
                         <Box title='Test SMTP Settings' border type='default' solid>
