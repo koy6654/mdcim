@@ -57,13 +57,15 @@ export default class SNMP extends Component {
                                     width: '30%',
                                 }}>
                                 </div>
-                                <div style={{ display: 'inline-block', margin: 'auto', width: '68%' }}>
+                                <div style={{ display: 'inline-block', margin: 'auto', width: '68%', verticalAlign: 'middle' }}>
                                     <input
                                         type='checkbox'
                                         name={this.props.name}
                                         style={{ width: '23px', height: '23px' }}
                                     />
-                                    <span style={{ display: 'table-cell', verticalAlign: 'middle', fontSize: '16px' }}>Allow</span>
+                                    <span style={{ display: 'inline-table', paddingLeft: '50px', fontSize: '16px', color: 'gray' }}>
+                                        Allow expired and not yet valid certificates
+                                    </span>
                                 </div>
                             </div>
                             <br /><br />
@@ -71,8 +73,24 @@ export default class SNMP extends Component {
 
                         <Box title='Test SMTP Settings' border type='default' solid>
                             <Input label='sysContact' />
-                            <button />
+                            <div>
+                                <div style={{
+                                    paddingBottom: '15px',
+                                    paddingTop: '35px',
+                                    display: 'inline-block',
+                                    width: '30%',
+                                }}>
+                                </div>
+                                <div style={{ display: 'inline-block', margin: 'auto', width: '68%' }}>
+                                    <button style={{ height: '35px' }}>Send Test Email</button>
+                                </div>
+                            </div><br />
                         </Box>
+
+                        <div style={{ textAlign: 'right' }}>
+                            <button style={{ height: '35px' }}>Save</button>
+                        </div>
+
                     </Col>
                 </Row>
             </Content>
