@@ -76,9 +76,9 @@ export default class App extends Component {
         <ServiceAdvertising path='/devicesettings/networkservices/serviceadvertising' exact />
         {/* Security */}
         <IPAccessControl path='/devicesettings/security/ipaccesscontrol' exact />
-        {/* <RoleBasedAccess path='/devicesettings/security/rolebasedaccess' exact />
+        <RoleBasedAccessControl path='/devicesettings/security/rolebasedaccesscontrol' exact />
         <TLSCertificate path='/devicesettings/security/tlscertificate' exact />
-        <Authentication path='/devicesettings/security/authentication' exact />
+        {/* <Authentication path='/devicesettings/security/authentication' exact />
         <LoginSettings path='/devicesettings/security/loginsettings' exact />
         <PasswordPolicy path='/devicesettings/security/passwordpolicy' exact />
         <ServiceAgreement path='/devicesettings/security/serviceagreement' exact /> */}

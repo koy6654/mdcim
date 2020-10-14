@@ -21,7 +21,12 @@ export default class CommonNetworkSettings extends Component {
                         width: '30%',
                     }}>{this.props.label}</div>
                     <div style={{ display: 'inline-block', verticalAlign: 'middle', width: '68%' }}>
-                        <Select2 name={this.props.name} labelPosition='none' style={{ width: '100%' }} options={this.props.options} />
+                        <Select2
+                            name={this.props.name}
+                            labelPosition='none'
+                            style={{ width: '100%' }}
+                            options={this.props.options}
+                            placeholder={this.props.placeholder} />
                     </div>
                 </div>
                 <br />
