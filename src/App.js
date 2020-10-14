@@ -81,8 +81,8 @@ export default class App extends Component {
         <RoleBasedAccessControl path='/devicesettings/security/rolebasedaccesscontrol' exact />
         <TLSCertificate path='/devicesettings/security/tlscertificate' exact />
         <Authentication path='/devicesettings/security/authentication' exact />
-        {/* <LoginSettings path='/devicesettings/security/loginsettings' exact />
-        <PasswordPolicy path='/devicesettings/security/passwordpolicy' exact />
+        <LoginSettings path='/devicesettings/security/loginsettings' exact />
+        {/* <PasswordPolicy path='/devicesettings/security/passwordpolicy' exact />
         <ServiceAgreement path='/devicesettings/security/serviceagreement' exact /> */}
 
 
