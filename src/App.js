@@ -28,6 +28,14 @@ import SSH from './screens/DeviceSettings/NetworkServices/SSH';
 import Telnet from './screens/DeviceSettings/NetworkServices/Telnet';
 import Modbus from './screens/DeviceSettings/NetworkServices/Modbus';
 import ServiceAdvertising from './screens/DeviceSettings/NetworkServices/ServiceAdvertising';
+import IPAccessControl from './screens/DeviceSettings/Security/IPAccessControl';
+import RoleBasedAccessControl from './screens/DeviceSettings/Security/RoleBasedAccessControl';
+import TLSCertificate from './screens/DeviceSettings/Security/TLSCertificate';
+import Authentication from './screens/DeviceSettings/Security/Authentication';
+import LoginSettings from './screens/DeviceSettings/Security/LoginSettings';
+import PasswordPolicy from './screens/DeviceSettings/Security/PasswordPolicy';
+import ServiceAgreement from './screens/DeviceSettings/Security/ServiceAgreement';
+
 
 export default class App extends Component {
   render() {
@@ -66,7 +74,14 @@ export default class App extends Component {
         <Telnet path='/devicesettings/networkservices/telnet' exact />
         <Modbus path='/devicesettings/networkservices/modbus' exact />
         <ServiceAdvertising path='/devicesettings/networkservices/serviceadvertising' exact />
-
+        {/* Security */}
+        <IPAccessControl path='/devicesettings/security/ipaccesscontrol' exact />
+        {/* <RoleBasedAccess path='/devicesettings/security/rolebasedaccess' exact />
+        <TLSCertificate path='/devicesettings/security/tlscertificate' exact />
+        <Authentication path='/devicesettings/security/authentication' exact />
+        <LoginSettings path='/devicesettings/security/loginsettings' exact />
+        <PasswordPolicy path='/devicesettings/security/passwordpolicy' exact />
+        <ServiceAgreement path='/devicesettings/security/serviceagreement' exact /> */}
 
 
         <Content>

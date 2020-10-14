@@ -9,14 +9,9 @@ export default class HTTP extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            inputValue: '',
         }
     }
-    handleChange(hc) {
-        this.setState({ inputValue: hc.target.value })
-    }
     render() {
-
         return (
             <Content title='HTTP / HTTPS'>
                 <Row>
