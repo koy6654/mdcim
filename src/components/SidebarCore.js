@@ -12,6 +12,8 @@ export default function SidebarCore() {
             <Item icon='fas-file-import' text='Feature Port' to='/featureport' />
             <Item icon='fas-lock' text='SmartLock' to='/smartlock' />
             <Item icon='fas-user' text='User Management'>
+                <Item icon='fas-angle-right' text='Login' to='/login' />
+                <Item icon='fas-angle-right' text='Register' to='/register' />
                 <Item icon='fas-angle-right' text='Users' to='/users' />
                 <Item icon='fas-angle-right' text='Roles' to='/roles' />
                 <Item icon='fas-angle-right' text='Change Password' to='/changepassword' />

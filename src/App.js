@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import AdminLTE, { Content, Navbar, Sidebar } from 'adminlte-2-react'
 
-
 import NavbarCore from './components/NavbarCore';
 import SidebarCore from './components/SidebarCore';
 
-import Login from './components/Login';
-import Register from './components/Register';
 import Dashboard from './screens/Dashboard';
 import SRC from './screens/SRC';
 import Peripherals from './screens/Peripherals';
 import FeaturePort from './screens/FeaturePort';
 import SmartLock from './screens/SmartLock';
 
+import Login from './components/Login';
+import Register from './components/Register';
 import Users from './screens/UserManagement/Users';
 import Roles from './screens/UserManagement/Roles';
 import ChangePassword from './screens/UserManagement/ChangePassword';
 import UserPreferences from './screens/UserManagement/UserPreferences';
 import DefaultPreferences from './screens/UserManagement/DefaultPreferences';
+
 
 import Network from './screens/DeviceSettings/Network/Network';
 import NetworkServices from './screens/DeviceSettings/NetworkServices/NetworkServices';
@@ -58,6 +58,8 @@ export default class App extends Component {
         <SmartLock path='/smartlock' exact />
 
         {/* User Management */}
+        <Login path='/login' exact />
+        <Register path='/register' exact />
         <Users path='/users' exact />
         <Roles path='/roles' exact />
         <ChangePassword path='/changepassword' exact />
@@ -78,8 +80,8 @@ export default class App extends Component {
         <IPAccessControl path='/devicesettings/security/ipaccesscontrol' exact />
         <RoleBasedAccessControl path='/devicesettings/security/rolebasedaccesscontrol' exact />
         <TLSCertificate path='/devicesettings/security/tlscertificate' exact />
-        {/* <Authentication path='/devicesettings/security/authentication' exact />
-        <LoginSettings path='/devicesettings/security/loginsettings' exact />
+        <Authentication path='/devicesettings/security/authentication' exact />
+        {/* <LoginSettings path='/devicesettings/security/loginsettings' exact />
         <PasswordPolicy path='/devicesettings/security/passwordpolicy' exact />
         <ServiceAgreement path='/devicesettings/security/serviceagreement' exact /> */}
 
