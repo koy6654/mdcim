@@ -35,6 +35,15 @@ import Authentication from './screens/DeviceSettings/Security/Authentication';
 import LoginSettings from './screens/DeviceSettings/Security/LoginSettings';
 import PasswordPolicy from './screens/DeviceSettings/Security/PasswordPolicy';
 import ServiceAgreement from './screens/DeviceSettings/Security/ServiceAgreement';
+import DateTime from './screens/DeviceSettings/DateTime';
+import EventRules from './screens/DeviceSettings/EventRules';
+import DataLogging from './screens/DeviceSettings/DataLogging';
+import DataPush from './screens/DeviceSettings/DataPush';
+import ServerReachability from './screens/DeviceSettings/ServerReachability';
+import FrontPanel from './screens/DeviceSettings/FrontPanel';
+import SerialPort from './screens/DeviceSettings/SerialPort';
+import LuaScripts from './screens/DeviceSettings/LuaScripts';
+import Miscellaneous from './screens/DeviceSettings/Miscellaneous';
 
 
 export default class App extends Component {
@@ -83,7 +92,21 @@ export default class App extends Component {
         <Authentication path='/devicesettings/security/authentication' exact />
         <LoginSettings path='/devicesettings/security/loginsettings' exact />
         <PasswordPolicy path='/devicesettings/security/passwordpolicy' exact />
-        {/* <ServiceAgreement path='/devicesettings/security/serviceagreement' exact /> */}
+        <ServiceAgreement path='/devicesettings/security/serviceagreement' exact />
+        {/* Else */}
+        <DateTime path='/devicesettings/datetime' exact />
+        <EventRules path='/devicesettings/eventrules' exact />
+        {/* <DataLogging path='/devicesettings/datalogging' exact />
+        <DataPush path='/devicesettings/datapush' exact />
+        <ServerReachability path='/devicesettings/serverreachability' exact />
+        <FrontPanel path='/devicesettings/frontpanel' exact />
+        <SerialPort path='/devicesettings/serialport' exact />
+        <LuaScripts path='/devicesettings/luascripts' exact />
+        <Miscellaneous path='/devicesettings/miscellaneous' exact /> */}
+
+
+
+
 
 
         <Content>

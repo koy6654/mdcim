@@ -20,7 +20,10 @@ export default class UserPreference extends Component {
                                 <Select options={Mapping} label="Temperature unit" />
                                 <Select label="Length unit" />
                                 <Select label="Pressure unit" />
-                                <button style={{ float: 'right', width: '100px', height: '35px', marginRight: '14px', marginBottom: '20px', marginTop: '8px', fontSize: '16px', borderRadius: '5px', borderWidth: '1px' }}>Save</button>
+                                {/* <button style={{ float: 'right', width: '100px', height: '35px', marginRight: '14px', marginBottom: '20px', marginTop: '8px', fontSize: '16px', borderRadius: '5px', borderWidth: '1px' }}>Save</button> */}
+                                <div style={{ textAlign: 'right', paddingRight: '2%' }}>
+                                    <button>Save</button>
+                                </div>
                             </Box>
                         </Col>
                     </Row>

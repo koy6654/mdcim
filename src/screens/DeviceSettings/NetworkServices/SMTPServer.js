@@ -50,25 +50,6 @@ export default class SMTPServer extends Component {
                                 </div>
                                 <Upload />
                                 <div>
-                                    <div style={{
-                                        paddingBottom: '15px',
-                                        paddingTop: '35px',
-                                        display: 'inline-block',
-                                        width: '30%',
-                                    }}>
-                                    </div>
-                                    {/* <div style={{ display: 'inline-block', width: '68%' }}>
-                                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                                        <input
-                                            type='checkbox'
-                                            name=''
-                                            style={{ width: '23px', height: '23px' }}
-                                        />
-                                        <span style={{ paddingLeft: '50px', fontSize: '16px', color: 'gray' }}>
-                                            Allow expired and not yet valid certificates
-                                        </span>
-                                    </div>
-                                </div> */}
                                     <Checkbox label2='Allow expired and not yet valid certificates' />
                                 </div>
                                 <br /><br />
