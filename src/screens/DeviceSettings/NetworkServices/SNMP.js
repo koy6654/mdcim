@@ -19,27 +19,29 @@ export default class SNMP extends Component {
     render() {
         return (
             <Content title='SNMP'>
-                <Row>
-                    <Col xs={12}>
-                        <Box title='SNMP Agent' border type='default' solid>
-                            <Checkbox label='Enable SNMP v1 / v2c' />
-                            <Input label='Read community string' placeholder='riei' />
-                            <Input label='Write community string' />
-                            <Checkbox label='Enable SNMP v3' />
-                        </Box>
+                <Box border solid>
+                    <Row>
+                        <Col xs={12}>
+                            <Box title='SNMP Agent' border type='default' solid>
+                                <Checkbox label='Enable SNMP v1 / v2c' />
+                                <Input label='Read community string' placeholder='riei' />
+                                <Input label='Write community string' />
+                                <Checkbox label='Enable SNMP v3' />
+                            </Box>
 
-                        <Box title='MIB-II System Group' border type='default' solid>
-                            <Input label='sysContact' />
-                            <Input label='sysName' />
-                            <Input label='sysLocation' />
-                        </Box>
+                            <Box title='MIB-II System Group' border type='default' solid>
+                                <Input label='sysContact' />
+                                <Input label='sysName' />
+                                <Input label='sysLocation' />
+                            </Box>
 
-                        <Box title='SNMP Notificatioins' border type='default' solid>
-                            <Checkbox label='Enable SNMP notifications' />
-                            <Select label='Notification type' />
-                        </Box>
-                    </Col>
-                </Row>
+                            <Box title='SNMP Notificatioins' border type='default' solid>
+                                <Checkbox label='Enable SNMP notifications' />
+                                <Select label='Notification type' />
+                            </Box>
+                        </Col>
+                    </Row>
+                </Box>
             </Content>
         );
     }

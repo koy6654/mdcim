@@ -21,16 +21,18 @@ export default class ChangePassword extends Component {
     render() {
         return (
             <Content title='Change Password - admin'>
-                <Row>
-                    <Col xs={12}>
-                        <Box border type='default' solid>
-                            <Input label='Old Password' />
-                            <Input label='New Password' />
-                            <Input label='Confirm New Password' />
-                            <button style={{ float: 'right', width: '100px', height: '35px', marginRight: '14px', marginBottom: '20px', marginTop: '8px', fontSize: '16px', borderRadius: '5px', borderWidth: '1px' }}>Save</button>
-                        </Box>
-                    </Col>
-                </Row>
+                <Box border solid>
+                    <Row>
+                        <Col xs={12}>
+                            <Box border type='default' solid>
+                                <Input label='Old Password' />
+                                <Input label='New Password' />
+                                <Input label='Confirm New Password' />
+                                <button style={{ float: 'right', width: '100px', height: '35px', marginRight: '14px', marginBottom: '20px', marginTop: '8px', fontSize: '16px', borderRadius: '5px', borderWidth: '1px' }}>Save</button>
+                            </Box>
+                        </Col>
+                    </Row>
+                </Box>
             </Content>
         );
     }

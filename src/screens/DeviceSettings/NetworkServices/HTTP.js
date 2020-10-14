@@ -14,22 +14,24 @@ export default class HTTP extends Component {
     render() {
         return (
             <Content title='HTTP / HTTPS'>
-                <Row>
-                    <Col xs={12}>
-                        <Box title='HTTP' border type='default' collapsable collapsed solid>
-                            <Checkbox label='Enable HTTP access' />
-                            <Checkbox label='Enforce use of HTTPS' />
-                            <Input label='Port' />
-                            <br />
-                        </Box>
-                        <Box title='HTTPS' border type='default' collapsable collapsed solid>
-                            <Checkbox label='Enable HTTPS access' />
-                            <Checkbox label='Enable HSTS' />
-                            <Input label='Port' />
-                            <br />
-                        </Box>
-                    </Col>
-                </Row>
+                <Box border solid>
+                    <Row>
+                        <Col xs={12}>
+                            <Box title='HTTP' border type='default' collapsable collapsed solid>
+                                <Checkbox label='Enable HTTP access' />
+                                <Checkbox label='Enforce use of HTTPS' />
+                                <Input label='Port' />
+                                <br />
+                            </Box>
+                            <Box title='HTTPS' border type='default' collapsable collapsed solid>
+                                <Checkbox label='Enable HTTPS access' />
+                                <Checkbox label='Enable HSTS' />
+                                <Input label='Port' />
+                                <br />
+                            </Box>
+                        </Col>
+                    </Row>
+                </Box>
             </Content >
         );
     }

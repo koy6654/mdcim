@@ -31,13 +31,15 @@ export default class Users extends Component {
         ]
         return (
             <Content title='Users'>
-                <Row>
-                    <Col xs={12}>
-                        <Box border='true' type='default' solid >
-                            <SimpleTable columns={Columns} data={Data}></SimpleTable>
-                        </Box>
-                    </Col>
-                </Row>
+                <Box border solid>
+                    <Row>
+                        <Col xs={12}>
+                            <Box border='true' type='default' solid >
+                                <SimpleTable columns={Columns} data={Data}></SimpleTable>
+                            </Box>
+                        </Col>
+                    </Row>
+                </Box>
             </Content>
         );
     }

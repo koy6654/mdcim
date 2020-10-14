@@ -16,18 +16,20 @@ export default class Telnet extends Component {
     render() {
         return (
             <Content title='Telnet'>
-                <Row>
-                    <Col xs={12}>
-                        <Box border type='default' solid>
-                            <Checkbox label='Server requires authentication' />
-                            <Input label='IP address / hostname' />
-                            <div style={{ textAlign: 'right', paddingTop: '30px', paddingRight: '2%' }}>
-                                <button style={{ height: '35px', width: '60px' }}>Save</button>
-                            </div>
-                            <br />
-                        </Box>
-                    </Col>
-                </Row>
+                <Box border solid>
+                    <Row>
+                        <Col xs={12}>
+                            <Box border type='default' solid>
+                                <Checkbox label='Server requires authentication' />
+                                <Input label='IP address / hostname' />
+                                <div style={{ textAlign: 'right', paddingTop: '30px', paddingRight: '2%' }}>
+                                    <button style={{ height: '35px', width: '60px' }}>Save</button>
+                                </div>
+                                <br />
+                            </Box>
+                        </Col>
+                    </Row>
+                </Box>
             </Content>
         );
     }

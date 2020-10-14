@@ -51,50 +51,52 @@ export default class IPAccessControl extends Component {
     render() {
         return (
             <Content title='IP Access Control'>
-                <Row>
-                    <Col xs={12}>
-                        <Box title='IPv4' border type='default' solid>
-                            <Checkbox label='Enable IPv4 access control' />
-                            <br /><br />
-                            <Subtitle label='Inbound Rules' />
-                            <Select label='Default policy' />
-                            <SimpleTable columns={Columns} data={Data} /><br /><br />
-                            <div style={{ textAlign: 'center' }}>
-                                <button>Append</button>&nbsp;&nbsp;&nbsp;
+                <Box border solid>
+                    <Row>
+                        <Col xs={12}>
+                            <Box title='IPv4' border type='default' solid>
+                                <Checkbox label='Enable IPv4 access control' />
+                                <br /><br />
+                                <Subtitle label='Inbound Rules' />
+                                <Select label='Default policy' />
+                                <SimpleTable columns={Columns} data={Data} /><br /><br />
+                                <div style={{ textAlign: 'center' }}>
+                                    <button>Append</button>&nbsp;&nbsp;&nbsp;
                                 <button>Insert Above</button>
-                            </div>
-                            <br /><br />
-                            <Subtitle label='Outbound Rules' />
-                            <Select label='Default policy' />
-                            <SimpleTable columns={Columns} data={Data} /><br /><br />
-                            <div style={{ textAlign: 'center' }}>
-                                <button>Append</button>&nbsp;&nbsp;&nbsp;
+                                </div>
+                                <br /><br />
+                                <Subtitle label='Outbound Rules' />
+                                <Select label='Default policy' />
+                                <SimpleTable columns={Columns} data={Data} /><br /><br />
+                                <div style={{ textAlign: 'center' }}>
+                                    <button>Append</button>&nbsp;&nbsp;&nbsp;
                                 <button>Insert Above</button>
-                            </div>
-                            <br />
-                        </Box>
-                        <Box title='IPv6' border type='default' solid>
-                            <Checkbox label='Enable IPv6 access control' />
-                            <br /><br />
-                            <Subtitle label='Inbound Rules' />
-                            <Select label='Default policy' />
-                            <SimpleTable columns={Columns} data={Data} /><br /><br />
-                            <div style={{ textAlign: 'center' }}>
-                                <button>Append</button>&nbsp;&nbsp;&nbsp;
+                                </div>
+                                <br />
+                            </Box>
+                            <Box title='IPv6' border type='default' solid>
+                                <Checkbox label='Enable IPv6 access control' />
+                                <br /><br />
+                                <Subtitle label='Inbound Rules' />
+                                <Select label='Default policy' />
+                                <SimpleTable columns={Columns} data={Data} /><br /><br />
+                                <div style={{ textAlign: 'center' }}>
+                                    <button>Append</button>&nbsp;&nbsp;&nbsp;
                                 <button>Insert Above</button>
-                            </div>
-                            <br /><br />
-                            <Subtitle label='Outbound Rules' />
-                            <Select label='Default policy' />
-                            <SimpleTable columns={Columns} data={Data} /><br /><br />
-                            <div style={{ textAlign: 'center' }}>
-                                <button>Append</button>&nbsp;&nbsp;&nbsp;
+                                </div>
+                                <br /><br />
+                                <Subtitle label='Outbound Rules' />
+                                <Select label='Default policy' />
+                                <SimpleTable columns={Columns} data={Data} /><br /><br />
+                                <div style={{ textAlign: 'center' }}>
+                                    <button>Append</button>&nbsp;&nbsp;&nbsp;
                                 <button>Insert Above</button>
-                            </div>
-                            <br />
-                        </Box>
-                    </Col>
-                </Row>
+                                </div>
+                                <br />
+                            </Box>
+                        </Col>
+                    </Row>
+                </Box>
             </Content >
         );
     }

@@ -15,15 +15,17 @@ export default class Network extends Component {
     render() {
         return (
             <Content title='Network'>
-                <Row>
-                    <Col xs={12}>
-                        <CommonNetworkSettings />
-                        <BRIDGE />
-                        <ETH title='ETH1' />
-                        <ETH title='ETH2' />
-                        <WIRELESS />
-                    </Col>
-                </Row>
+                <Box border solid>
+                    <Row>
+                        <Col xs={12}>
+                            <CommonNetworkSettings />
+                            <BRIDGE />
+                            <ETH title='ETH1' />
+                            <ETH title='ETH2' />
+                            <WIRELESS />
+                        </Col>
+                    </Row>
+                </Box>
             </Content>
         );
     }

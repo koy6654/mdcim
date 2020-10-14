@@ -26,118 +26,120 @@ export default class SSH extends Component {
         }
         return (
             <Content title='SSH'>
-                <Row>
-                    <Col xs={12}>
-                        <Box border type='default' solid>
-                            <Checkbox label='Enable SSH access' />
-                            <Input label='SSH port' />
-                            <div style={{ paddingTop: '20px' }}>
+                <Box border solid>
+                    <Row>
+                        <Col xs={12}>
+                            <Box border type='default' solid>
+                                <Checkbox label='Enable SSH access' />
+                                <Input label='SSH port' />
+                                <div style={{ paddingTop: '20px' }}>
+                                    <div style={{
+                                        paddingLeft: '10px',
+                                        fontSize: '20px',
+                                        paddingBottom: '15px',
+                                        display: 'inline-block',
+                                        width: '30%',
+                                    }}>Authentication</div>
+                                    <div style={{ display: 'inline-block', verticalAlign: 'middle', width: '68%' }}>
+                                        <Radio
+                                            labelPosition='none'
+                                            options={[{
+                                                checked: true,
+                                                id: 'optionsRadio1',
+                                                value: 'optionRadio1',
+                                                label: 'Password authentication only',
+                                            },
+                                            {
+                                                id: 'optionsRadios2',
+                                                value: 'optionRadio2',
+                                                label: 'Public key authentication only'
+                                            },
+                                            {
+                                                id: 'optionsRadio3',
+                                                value: 'optionRadio3',
+                                                label: 'Password and public key authentication',
+                                            },
+                                            ]}
+                                            name="optionsRadios"
+                                            onChange={() => { }}
+                                        />
+                                    </div>
+                                </div>
                                 <div style={{
                                     paddingLeft: '10px',
-                                    fontSize: '20px',
-                                    paddingBottom: '15px',
-                                    display: 'inline-block',
-                                    width: '30%',
-                                }}>Authentication</div>
-                                <div style={{ display: 'inline-block', verticalAlign: 'middle', width: '68%' }}>
-                                    <Radio
-                                        labelPosition='none'
-                                        options={[{
-                                            checked: true,
-                                            id: 'optionsRadio1',
-                                            value: 'optionRadio1',
-                                            label: 'Password authentication only',
-                                        },
-                                        {
-                                            id: 'optionsRadios2',
-                                            value: 'optionRadio2',
-                                            label: 'Public key authentication only'
-                                        },
-                                        {
-                                            id: 'optionsRadio3',
-                                            value: 'optionRadio3',
-                                            label: 'Password and public key authentication',
-                                        },
-                                        ]}
-                                        name="optionsRadios"
-                                        onChange={() => { }}
-                                    />
-                                </div>
-                            </div>
-                            <div style={{
-                                paddingLeft: '10px',
-                                paddingRight: '10px',
-                                fontSize: '25px',
-                                paddingBottom: '10px',
-                                paddingTop: '25px',
-                                borderBottom: '2px solid #E0D7D7',
-                            }}>
-                                SSH host keys
+                                    paddingRight: '10px',
+                                    fontSize: '25px',
+                                    paddingBottom: '10px',
+                                    paddingTop: '25px',
+                                    borderBottom: '2px solid #E0D7D7',
+                                }}>
+                                    SSH host keys
                             </div>
 
-                            <br />
-                            <div style={{ verticalAlign: 'middle', }}>
-                                <div style={divStyle}>
-                                    RSA Public Key
+                                <br />
+                                <div style={{ verticalAlign: 'middle', }}>
+                                    <div style={divStyle}>
+                                        RSA Public Key
                                 </div>
-                                <div style={divStyleSub}>
-                                    aaaaaa
+                                    <div style={divStyleSub}>
+                                        aaaaaa
                                 </div>
-                            </div>
-
-                            <div style={{ verticalAlign: 'middle', }}>
-                                <div style={divStyle}>
-                                    RSA Fingerprint (SHA256)
                                 </div>
-                                <div style={divStyleSub}>
 
+                                <div style={{ verticalAlign: 'middle', }}>
+                                    <div style={divStyle}>
+                                        RSA Fingerprint (SHA256)
                                 </div>
-                            </div>
+                                    <div style={divStyleSub}>
 
-                            <div style={{ verticalAlign: 'middle', }}>
-                                <div style={divStyle}>
-                                    RSA Fingerprint (MD5)
+                                    </div>
                                 </div>
-                                <div style={divStyleSub}>
 
+                                <div style={{ verticalAlign: 'middle', }}>
+                                    <div style={divStyle}>
+                                        RSA Fingerprint (MD5)
                                 </div>
-                            </div>
+                                    <div style={divStyleSub}>
 
-                            <div style={{ verticalAlign: 'middle', }}>
-                                <div style={divStyle}>
-                                    ECDSA Public Key
+                                    </div>
                                 </div>
-                                <div style={divStyleSub}>
 
+                                <div style={{ verticalAlign: 'middle', }}>
+                                    <div style={divStyle}>
+                                        ECDSA Public Key
                                 </div>
-                            </div>
+                                    <div style={divStyleSub}>
 
-
-
-                            <div style={{ verticalAlign: 'middle', }}>
-                                <div style={divStyle}>
-                                    ECDSA Public Key (SHA256)
+                                    </div>
                                 </div>
-                                <div style={divStyleSub}>
 
+
+
+                                <div style={{ verticalAlign: 'middle', }}>
+                                    <div style={divStyle}>
+                                        ECDSA Public Key (SHA256)
                                 </div>
-                            </div>
+                                    <div style={divStyleSub}>
 
-
-
-
-                            <div style={{ verticalAlign: 'middle', }}>
-                                <div style={divStyle}>
-                                    ECDSA Public Key (MD5)
+                                    </div>
                                 </div>
-                                <div style={divStyleSub}>
 
+
+
+
+                                <div style={{ verticalAlign: 'middle', }}>
+                                    <div style={divStyle}>
+                                        ECDSA Public Key (MD5)
                                 </div>
-                            </div>
-                            <br />
-                        </Box>
-                    </Col>
-                </Row>
+                                    <div style={divStyleSub}>
+
+                                    </div>
+                                </div>
+                                <br />
+                            </Box>
+                        </Col>
+                    </Row>
+                </Box>
             </Content>
 
 

@@ -55,38 +55,40 @@ export default class RoleBasedAccessControl extends Component {
     render() {
         return (
             <Content title='Role Based Access Control'>
-                <Row>
-                    <Col xs={12}>
-                        <Box title='IPv4' border type='default' solid>
-                            <Checkbox label='Enable role based access control for IPv4' />
-                            <Select label='Default policy' placeholder='Accept' />
-                            <SimpleTable columns={Columns} data={Data} /><br /><br />
-                            <div style={{ textAlign: 'center' }}>
-                                <button>Append</button>&nbsp;&nbsp;&nbsp;
+                <Box border solid>
+                    <Row>
+                        <Col xs={12}>
+                            <Box title='IPv4' border type='default' solid>
+                                <Checkbox label='Enable role based access control for IPv4' />
+                                <Select label='Default policy' placeholder='Accept' />
+                                <SimpleTable columns={Columns} data={Data} /><br /><br />
+                                <div style={{ textAlign: 'center' }}>
+                                    <button>Append</button>&nbsp;&nbsp;&nbsp;
                                 <button>Insert Above</button>
-                            </div>
-                            <br /><br />
-                            <div style={{ textAlign: 'right', paddingRight: '2%' }}>
-                                <button>Save</button>
-                            </div>
-                            <br />
-                        </Box>
-                        <Box title='IPv6' border type='default' solid>
-                            <Checkbox label='Enable role based access control for IPv6' />
-                            <Select label='Default policy' placeholder='Accept' />
-                            <SimpleTable columns={Columns} data={Data} /><br /><br />
-                            <div style={{ textAlign: 'center' }}>
-                                <button>Append</button>&nbsp;&nbsp;&nbsp;
+                                </div>
+                                <br /><br />
+                                <div style={{ textAlign: 'right', paddingRight: '2%' }}>
+                                    <button>Save</button>
+                                </div>
+                                <br />
+                            </Box>
+                            <Box title='IPv6' border type='default' solid>
+                                <Checkbox label='Enable role based access control for IPv6' />
+                                <Select label='Default policy' placeholder='Accept' />
+                                <SimpleTable columns={Columns} data={Data} /><br /><br />
+                                <div style={{ textAlign: 'center' }}>
+                                    <button>Append</button>&nbsp;&nbsp;&nbsp;
                                 <button>Insert Above</button>
-                            </div>
-                            <br /><br />
-                            <div style={{ textAlign: 'right', paddingRight: '2%' }}>
-                                <button>Save</button>
-                            </div>
-                            <br />
-                        </Box>
-                    </Col>
-                </Row>
+                                </div>
+                                <br /><br />
+                                <div style={{ textAlign: 'right', paddingRight: '2%' }}>
+                                    <button>Save</button>
+                                </div>
+                                <br />
+                            </Box>
+                        </Col>
+                    </Row>
+                </Box>
             </Content >
         );
     }

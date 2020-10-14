@@ -66,13 +66,15 @@ export default class Peripherals extends Component {
     render() {
         return (
             <Content title='Peripherals'>
-                <Row>
-                    <Col xs={12}>
-                        <Box title='Devices' border='true' type='default' solid>
-                            <SimpleTable columns={Columns} data={Data} />
-                        </Box>
-                    </Col>
-                </Row>
+                <Box border solid>
+                    <Row>
+                        <Col xs={12}>
+                            <Box title='Devices' border='true' type='default' solid>
+                                <SimpleTable columns={Columns} data={Data} />
+                            </Box>
+                        </Col>
+                    </Row>
+                </Box>
             </Content>
         );
     }
