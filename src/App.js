@@ -96,8 +96,8 @@ export default class App extends Component {
         {/* Else */}
         <DateTime path='/devicesettings/datetime' exact />
         <EventRules path='/devicesettings/eventrules' exact />
-        {/* <DataLogging path='/devicesettings/datalogging' exact />
-        <DataPush path='/devicesettings/datapush' exact />
+        <DataLogging path='/devicesettings/datalogging' exact />
+        {/* <DataPush path='/devicesettings/datapush' exact />
         <ServerReachability path='/devicesettings/serverreachability' exact />
         <FrontPanel path='/devicesettings/frontpanel' exact />
         <SerialPort path='/devicesettings/serialport' exact />
