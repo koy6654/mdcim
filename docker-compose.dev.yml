@@ -5,20 +5,22 @@ version: '3.5'
 #   mdc-trap-receiver-packages: {}
 
 services:
- react:
+
+  react:
     container_name: react-dockerize
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ./src/frontend/Dockerfile
     volumes:
-      - ".:/mdcim"
-      - "/mdcim/node_modules"
+      - "./src/frontend:/mdcim/src/frontend"
+      
     ports:
       - "3001:3000"
     environment:
       - NODE_ENV=development
     stdin_open: true
     tty: true
+
 
 #   mdc-manager:
 #     image: mdc-manager:dev

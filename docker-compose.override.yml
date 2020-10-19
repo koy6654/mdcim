@@ -1,14 +1,15 @@
-# version: '3.5'
+version: '3.5'
 
 services:
- react:
+
+  react:
     container_name: react-dockerize
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ./src/frontend/Dockerfile
     volumes:
-      - ".:/mdcim"
-      - "/mdcim/node_modules"
+      - "./src/frontend:/mdcim/src/frontend"
+      
     ports:
       - "3001:3000"
     environment:
