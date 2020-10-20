@@ -6,12 +6,8 @@ export default class Input extends Component {
         this.state = {
             inputValue: '',
         }
-        this.handleChange = this.handleChange.bind(this)
     }
 
-    handleChange(hc) {
-        this.setState({ inputValue: hc.target.value })
-    }
     render() {
         return (
             <>
@@ -28,9 +24,9 @@ export default class Input extends Component {
                 </div>
                 <div style={{ display: 'inline-block', margin: 'auto', width: '68%' }}>
                     <input
-                        name=''
-                        value={this.state.inputValue}
-                        onChange={this.handleChange}
+                        name={this.props.name}
+                        value={this.props.value}
+                        onChange={this.props.onChange}
                         onFocus={(oF) => oF.target.placeholder = ''}
                         style={{ width: '100%', borderRadius: '5px', borderWidth: '1px', padding: '3px', paddingLeft: '10px', borderColor: '#E5E5E5' }}
                         placeholder={this.props.placeholder} />
