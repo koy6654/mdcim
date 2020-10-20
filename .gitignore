@@ -147,7 +147,7 @@ dhv/
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/src/frontend/node_modules
+/src/frontend/node_modules/
 /.pnp
 .pnp.js
 
