@@ -5,7 +5,7 @@ WORKDIR /mdcim/src/frontend
 
 ENV PATH /mdcim/src/frontend/node_modules/.bin:$PATH
 
-COPY ./src/frontend/package.json /mdcim/src/frontend/package.json
+COPY ./frontend/package.json /mdcim/src/frontend/package.json
 # RUN apt-get update -qq && apt-get install -y build-essential nodejs
 RUN npm install 
 

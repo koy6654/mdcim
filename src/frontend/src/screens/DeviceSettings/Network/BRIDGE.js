@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Box } from 'adminlte-2-react';
 
 import Input from '../../../components/Input';
-import Checkbox from '../../../components/Checkbox';
-import Select from '../../../components/Select';
 import SaveButton from '../../../components/SaveButton';
 
 import axios from 'axios';

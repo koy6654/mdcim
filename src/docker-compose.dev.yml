@@ -1,0 +1,83 @@
+# version: '3.5'
+# volumes:
+#   mdc-manager-packages: {}
+#   mdc-job-broker-packages: {}
+#   mdc-trap-receiver-packages: {}
+
+
+#   mdc-manager:
+#     image: mdc-manager:dev
+#     build:
+#       context: .
+#       dockerfile: ./mdc/manager/Dockerfile-dev
+#     environment:
+#       - REDIS_IP=${REDIS_IP}
+#       - REDIS_PORT=${REDIS_PORT}
+#       - API_IP=${API_IP}
+#       - API_PORT=${API_PORT}
+#       - WORK_DIR=$PWD
+#       - CONF_SERVER_API_KEY=${CONF_SERVER_API_KEY}
+#     logging:
+#       driver: "json-file"
+#       options:
+#         max-file: "3"
+#         max-size: "1m"
+#     volumes:
+#       - .:/src/
+#       - mdc-manager-packages:/usr/local/lib/python3.7/site-packages/
+#     command: |
+#       /bin/sh mdc/manager/start-dev.sh
+
+#   mdc-job-broker:
+#     image: mdc-job-broker:dev
+#     build:
+#       context: .
+#       dockerfile: ./mdc/job_broker/Dockerfile-dev
+#     environment:
+#       - REDIS_IP=${REDIS_IP}
+#       - REDIS_PORT=${REDIS_PORT}
+#       - API_IP=${API_IP}
+#       - API_PORT=${API_PORT}
+#       - INFLUX_DB_HOST=${INFLUX_DB_HOST}
+#       - INFLUX_DB_PORT=${INFLUX_DB_PORT}
+#       - INFLUX_DB_DATABASE=${INFLUX_DB_DATABASE}
+#       - CONF_SERVER_API_KEY=${CONF_SERVER_API_KEY}
+#     logging:
+#       driver: "json-file"
+#       options:
+#         max-file: "5"
+#         max-size: "10m"
+#     volumes:
+#       - .:/src/
+#       - mdc-job-broker-packages:/usr/local/lib/python3.7/site-packages/
+#     command: |
+#       /bin/sh mdc/job_broker/start-dev.sh
+
+#   mdc-trap-receiver:
+#     image: mdc-trap-receiver:dev
+#     build:
+#       context: .
+#       dockerfile: ./mdc/services/trap_receiver/Dockerfile-dev
+#     ports:
+#       - "11162:1162/udp"
+#     environment:
+#       - REDIS_IP=${REDIS_IP}
+#       - REDIS_PORT=${REDIS_PORT}
+#       - API_IP=${API_IP}
+#       - API_PORT=${API_PORT}
+#       - TRAP_MODEL=${TRAP_MODEL}
+#       - TRAP_HOST=${TRAP_HOST}
+#       - TRAP_PORT=${TRAP_PORT}
+#       - TRAP_COMMUNITY=${TRAP_COMMUNITY}
+#       - ID=123
+#       - CONF_SERVER_API_KEY=${CONF_SERVER_API_KEY}
+#     logging:
+#       driver: "json-file"
+#       options:
+#         max-file: "5"
+#         max-size: "10m"
+#     volumes:
+#       - .:/src/
+#       - mdc-trap-receiver-packages:/usr/local/lib/python3.7/site-packages/
+#     command: |
+#       /bin/sh mdc/services/trap_receiver/start-dev.sh
